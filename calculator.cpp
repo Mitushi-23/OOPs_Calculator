@@ -48,10 +48,12 @@ public:
 class scientific
 {
 
-    int value;
-    double ans;
+    
 
 public:
+int value;
+    double ans;
+
     void gdata()
     {
         cout << "Enter a number" << endl;
@@ -92,38 +94,38 @@ class hybrid : public simple, public scientific
     string input;
 
 public:
-    string perform()
+    void perform()
     {
         cout << "Which operation you want yo perform?" << endl;
         cin >> input;
-        return input;
+        
     }
 
     void display()
     {
         if (input == "sum" || input == "add" || input == "addition" || input == "+")
-            cout << "sum is " << addition() << endl;
+            cout << "sum of " << x << " and " << y <<  " is " << addition() << endl;
 
         if (input == "subtraction" || input == "difference" || input == "minus" || input == "-")
-            cout << "difference is " << subtraction() << endl;
+            cout << "difference of " << x << " and " << y <<  " is " << subtraction() << endl;
 
         if (input == "product" || input == "multiplication" || input == "multiply" || input == "*")
-            cout << "product is " << product() << endl;
+            cout << "product of " << x << " and " << y <<  " is " << product() << endl;
 
         if (input == "division" || input == "divide" || input == "div" || input == "/")
-            cout << "quotient is " << divide() << endl;
+            cout << "quotient of " << x << " and " << y <<  " is " << divide() << endl;
 
         if (input == "square")
-            cout << "square is " << square() << endl;
+            cout << "square of " << value <<  " is " << square() << endl;
 
         if (input == "cube")
-            cout << "cube is " << cube() << endl;
+            cout << "cube of " << value <<  " is " << cube() << endl;
 
         if (input == "squareroot")
-            cout << "squareroot is " << squareroot() << endl;
+            cout << "squareroot of " << value <<  " is " << squareroot() << endl;
 
         if (input == "cuberoot")
-            cout << "cuberoot is " << cuberoot() << endl;
+            cout << "cuberoot of " << value <<  " is " << cuberoot() << endl;
     }
 };
 
